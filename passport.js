@@ -18,6 +18,7 @@ exports = module.exports = function(app, passport) {
         conditions.email = username.toLowerCase();
       }
 
+
       app.db.models.User.findOne(conditions, function(err, user) {
         if (err) {
           return done(err);

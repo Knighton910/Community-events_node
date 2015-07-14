@@ -28,3 +28,5 @@ exports.init = function(req, res, next){
 
   require('async').parallel(queries, asyncFinally);
 };
+
+// verified - No visible errors
